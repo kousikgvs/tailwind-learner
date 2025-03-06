@@ -9,28 +9,47 @@
   </head>
   <body>
     <!-- Positioning -->
+    <!-- absolute means styling with respect to the Parent -->
+     <div class="relative h-12 bg-red-200 w-1/2">
+      <p>Parent Element</p>
+      <div class="absolute bottom-0 right-0 bg-red-500">
+        <p>absolute child</p>
+      </div>
+     </div>
+    
+     <div class="bg-white w-full h-10"></div>
 
-    <!-- Top left corner -->
+    <!-- bottom left corner -->
+    <div class="relative h-12 bg-red-200 w-1/2">
+      <p>Parent Element</p>
+      <div class="absolute bottom-0 left-0 bg-red-500">
+        <p>absolute child</p>
+      </div>
+     </div>
 
-    <!-- Top right corner -->
-
-    <!-- Bottom left corner -->
-
-    <!-- Bottom right corner -->
+     <div class="bg-white w-full h-10"></div>
 
     <!-- Span top edge -->
-
-    <!-- Span left edge -->
-
-    <!-- Span right edge -->
-
-    <!-- Span bottom edge -->
+    <!-- inset-x-0 → Sets left and right (inset-x) to 0, making the <div> stretch across the full width of the parent. -->
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <!-- <p>Parent Element</p> -->
+      <div class="absolute inset-x-0 top-0 h-10 bg-yellow-300"></div>
+      <!-- <p>absolute child</p> -->
+      </div>
+     </div>
 
     <!-- Display Classes -->
+     <div>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate suscipit perferendis <span class="inline font-bold w-40">This is Inline</span> adipisci repudiandae <span class="inline-block font-bold w-20">This is inline block</span>  assumenda reiciendis eius qui maxime, modi dolores ad blanditiis quidem vel provident sit velit iure atque repellat.
+     </div>
 
     <!-- Z-Index -->
 
     <!-- Floats -->
+     <img src="../assets/img/img1.jpg" width="300" class="float-left"/>
+     <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit quod earum amet unde voluptates quos inventore labore deleniti neque libero, quidem quas debitis odit consequuntur nostrum dignissimos, totam ea modi!
+     </p>
   </body>
 </html>
 
